@@ -21,18 +21,18 @@ The goals / steps of this project are the following:
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps. 
-*First, I converted the images to grayscale 
-*removed noise by using GaussianBlur
-*Find out edges using Canny 
-*Define region of interest to remove unwanted lines
-*Find out line using hough line
+* First, I converted the images to grayscale 
+* removed noise by using GaussianBlur
+* Find out edges using Canny 
+* Define region of interest to remove unwanted lines
+* Find out line using hough line
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function as ...
-*taken slope of line between threshold 20 degree and 60 degree 
-*taken average of positive and negative slope separately
-*calculate average of x and y coordinates
-*calculate average intercept b = y - mx
-*draw line using y_min and y_max with x coordinate calculate as (y - b )/m
+* taken slope of line between threshold 20 degree and 60 degree 
+* taken average of positive and negative slope separately
+* calculate average of x and y coordinates
+* calculate average intercept b = y - mx
+* draw line using y_min and y_max with x coordinate calculate as (y - b )/m
 
 
 Images : 
